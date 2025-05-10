@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoe</title>
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            overflow: hidden;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .flower-container {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .flower {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            animation: spin 6s linear infinite;
+        }
+
+        .petal {
+            width: 25px;
+            height: 25px;
+            background: pink;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+            .petal:nth-child(1) {
+                top: 0;
+                left: 17px;
+            }
+
+            .petal:nth-child(2) {
+                top: 17px;
+                left: 0;
+            }
+
+            .petal:nth-child(3) {
+                top: 17px;
+                left: 30px;
+            }
+
+            .petal:nth-child(4) {
+                top: 34px;
+                left: 17px;
+            }
+
+        .center {
+            width: 20px;
+            height: 20px;
+            background: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .stem {
+            width: 8px;
+            height: 80px;
+            background: green;
+            position: absolute;
+            top: 45px;
+            left: 26px;
+            border-radius: 4px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateY(-50%) translateY(-50px);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Position each flower container */
+        .flower-container:nth-of-type(1) {
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .flower-container:nth-of-type(2) {
+            left: 15%;
+            animation-delay: 1s;
+        }
+
+        .flower-container:nth-of-type(3) {
+            left: 25%;
+            animation-delay: 2s;
+        }
+
+        .flower-container:nth-of-type(4) {
+            left: 35%;
+            animation-delay: 3s;
+        }
+
+        .flower-container:nth-of-type(5) {
+            left: 45%;
+            animation-delay: 4s;
+        }
+
+        .flower-container:nth-of-type(6) {
+            left: 55%;
+            animation-delay: 5s;
+        }
+
+        .flower-container:nth-of-type(7) {
+            left: 65%;
+            animation-delay: 6s;
+        }
+
+        .flower-container:nth-of-type(8) {
+            left: 75%;
+            animation-delay: 7s;
+        }
+
+        .flower-container:nth-of-type(9) {
+            left: 85%;
+            animation-delay: 8s;
+        }
+
+        .flower-container:nth-of-type(10) {
+            left: 95%;
+            animation-delay: 9s;
+        }
+
+        .message {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            color: pink;
+            text-shadow: 0 0 8px rgba(255, 192, 203, 0.8);
+            animation: fadeIn 3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 10 animated cartoon flowers with stems -->
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+    </div>
+
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+    </div>
+
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+    </div>
+
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+    </div>
+
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+    </div>
+
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+    </div>
+
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+    </div>
+
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+    </div>
+
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+    </div>
+
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+    </div>
+
+    <!-- Message at the bottom -->
+    <div class="message">I love you Zoe 💗❤️</div>
+
+</body>
+</html>
